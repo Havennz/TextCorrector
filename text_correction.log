@@ -1,0 +1,413 @@
+2025-04-13 03:46:28,722 - INFO - Starting Text Correction application.
+2025-04-13 03:46:28,787 - INFO - Waiting for alt+s to correct text...
+2025-04-13 03:47:16,079 - INFO - Starting Text Correction application.
+2025-04-13 03:47:16,144 - INFO - Waiting for alt+s to correct text...
+2025-04-13 03:50:44,376 - INFO - Starting Text Correction application.
+2025-04-13 03:50:44,442 - INFO - Binding hotkey <Alt-s> to correction.
+2025-04-13 03:54:21,575 - INFO - Starting Text Correction application.
+2025-04-13 03:54:41,049 - ERROR - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/pynput/_util/xorg.py", line 472, in _handler
+    self._handle_message(self._display_stop, event, injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/_xorg.py", line 578, in _handle_message
+    self.on_press(key, injected)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 291, in <lambda>
+    return lambda *a: f(*a[:actual])
+                      ~^^^^^^^^^^^^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 193, in <lambda>
+    return lambda k: f(l.canonical(k))
+                     ~^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/__init__.py", line 194, in press
+    self._on_activate()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 104, in handle_hotkey
+    original_text = pyperclip.paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 677, in lazy_load_stub_paste
+    return paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 147, in paste_gtk
+    clipboardContents = gtk.Clipboard().wait_for_text()
+                        ^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/gi/__init__.py", line 72, in __getattr__
+    raise AttributeError(_static_binding_error)
+AttributeError: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-04-13 03:56:49,589 - INFO - Starting Text Correction application.
+2025-04-13 03:57:06,560 - ERROR - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/pynput/_util/xorg.py", line 472, in _handler
+    self._handle_message(self._display_stop, event, injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/_xorg.py", line 578, in _handle_message
+    self.on_press(key, injected)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 291, in <lambda>
+    return lambda *a: f(*a[:actual])
+                      ~^^^^^^^^^^^^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 205, in on_press
+    handle_hotkey()
+    ~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 110, in handle_hotkey
+    original_text = pyperclip.paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 677, in lazy_load_stub_paste
+    return paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 147, in paste_gtk
+    clipboardContents = gtk.Clipboard().wait_for_text()
+                        ^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/gi/__init__.py", line 72, in __getattr__
+    raise AttributeError(_static_binding_error)
+AttributeError: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-04-13 04:03:40,400 - INFO - Starting Text Correction application.
+2025-04-13 04:03:40,464 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:03:50,183 - INFO - Starting Text Correction application.
+2025-04-13 04:03:50,255 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:07:11,694 - INFO - Starting Text Correction application.
+2025-04-13 04:07:11,760 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:08:44,096 - INFO - Starting Text Correction application.
+2025-04-13 04:08:44,172 - ERROR - Unhandled error: g-io-error-quark: Error sending credentials: Error sending message: Broken pipe (44)
+2025-04-13 04:09:08,396 - INFO - Starting Text Correction application.
+2025-04-13 04:09:08,473 - ERROR - Unhandled error: g-spawn-exit-error-quark: Erro ao chamar a linha de comandos “dbus-launch --autolaunch=ce1975cc0bb24a27a7b28cb109b25322 --binary-syntax --close-stderr”: Processo filho concluiu com código 1 (1)
+2025-04-13 04:11:05,393 - INFO - Starting Text Correction application.
+2025-04-13 04:11:05,457 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:12:37,151 - INFO - Starting Text Correction application.
+2025-04-13 04:12:37,233 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:16:57,205 - INFO - Starting Text Correction application.
+2025-04-13 04:16:57,271 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:35:17,424 - INFO - Starting Text Correction application.
+2025-04-13 04:35:17,490 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:42:47,945 - INFO - Starting Text Correction application.
+2025-04-13 04:42:48,017 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:43:07,584 - ERROR - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/pynput/_util/xorg.py", line 472, in _handler
+    self._handle_message(self._display_stop, event, injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/_xorg.py", line 578, in _handle_message
+    self.on_press(key, injected)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 291, in <lambda>
+    return lambda *a: f(*a[:actual])
+                      ~^^^^^^^^^^^^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 286, in <lambda>
+    return lambda k: f(listener.canonical(k))
+                     ~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/__init__.py", line 194, in press
+    self._on_activate()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 277, in on_activate
+    handle_hotkey()
+    ~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 122, in handle_hotkey
+    original_text = pyperclip.paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 677, in lazy_load_stub_paste
+    return paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 147, in paste_gtk
+    clipboardContents = gtk.Clipboard().wait_for_text()
+                        ^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/gi/__init__.py", line 72, in __getattr__
+    raise AttributeError(_static_binding_error)
+AttributeError: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-04-13 04:49:04,030 - INFO - Starting Text Correction application.
+2025-04-13 04:49:04,094 - INFO - Waiting for alt+s to correct text...
+2025-04-13 04:49:10,394 - ERROR - Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 230, in inner
+    return f(self, *args, **kwargs)
+  File "/usr/lib/python3.13/site-packages/pynput/_util/xorg.py", line 472, in _handler
+    self._handle_message(self._display_stop, event, injected)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/_xorg.py", line 578, in _handle_message
+    self.on_press(key, injected)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 146, in inner
+    if f(*args) is False:
+       ~^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/_util/__init__.py", line 291, in <lambda>
+    return lambda *a: f(*a[:actual])
+                      ~^^^^^^^^^^^^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 286, in <lambda>
+    return lambda k: f(listener.canonical(k))
+                     ~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/pynput/keyboard/__init__.py", line 194, in press
+    self._on_activate()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 277, in on_activate
+    handle_hotkey()
+    ~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/main.py", line 122, in handle_hotkey
+    original_text = pyperclip.paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 677, in lazy_load_stub_paste
+    return paste()
+  File "/usr/lib/python3.13/site-packages/pyperclip/__init__.py", line 147, in paste_gtk
+    clipboardContents = gtk.Clipboard().wait_for_text()
+                        ^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/gi/__init__.py", line 72, in __getattr__
+    raise AttributeError(_static_binding_error)
+AttributeError: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:50:48,073 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 19:50:48,073 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 19:50:48,073 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 19:50:48,073 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 19:50:48,075 - ClipboardService - INFO - Clipboard access verified
+2025-08-04 19:50:48,075 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 19:50:48,075 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 19:50:48,167 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 19:50:48,167 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 19:50:48,167 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 19:50:48,168 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 19:50:48,168 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 19:50:48,169 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 19:50:48,169 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 19:50:48,169 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 19:50:48,170 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 19:50:48,183 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 19:50:48,184 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 19:50:48,184 - pystray._base - ERROR - Failed to dock icon
+Traceback (most recent call last):
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 162, in _update_icon
+    self._assert_docked()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 395, in _assert_docked
+    assert self._systray_manager
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+2025-08-04 19:50:48,185 - pystray._base - ERROR - Failed to dock icon
+Traceback (most recent call last):
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 143, in _show
+    self._assert_docked()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 395, in _assert_docked
+    assert self._systray_manager
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+2025-08-04 19:50:48,213 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 19:51:09,918 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:51:09,920 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 19:51:09,920 - TextCorrectionService - INFO - Processing text correction for 39 characters
+2025-08-04 19:51:11,234 - TextCorrectionService - INFO - Text correction completed in 1.31s
+2025-08-04 19:51:11,349 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 19:51:11,453 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 19:51:11,453 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 19:51:11,453 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 1.31s
+2025-08-04 19:51:24,518 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:51:24,525 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 19:51:24,526 - TextCorrectionService - INFO - Processing text correction for 34 characters
+2025-08-04 19:51:24,983 - TextCorrectionService - INFO - Text correction completed in 0.46s
+2025-08-04 19:51:25,026 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 19:51:25,140 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 19:51:25,140 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 19:51:25,140 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.46s
+2025-08-04 19:53:03,576 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 19:53:03,577 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 19:53:03,577 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 19:53:03,578 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 19:53:03,578 - ClipboardService - WARNING - Clipboard access issue: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:03,579 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 19:53:03,579 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 19:53:03,601 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 19:53:03,601 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 19:53:03,601 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 19:53:03,602 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 19:53:03,602 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 19:53:03,602 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:03,602 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 19:53:03,602 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 19:53:03,602 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 19:53:03,602 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 19:53:03,666 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 19:53:03,666 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 19:53:03,690 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 19:53:16,166 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:53:16,167 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:16,168 - TextCorrectionUseCase - WARNING - Attempted correction with empty clipboard
+2025-08-04 19:53:19,015 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:53:19,016 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:19,017 - TextCorrectionUseCase - WARNING - Attempted correction with empty clipboard
+2025-08-04 19:53:24,145 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:53:24,146 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:24,147 - TextCorrectionUseCase - WARNING - Attempted correction with empty clipboard
+2025-08-04 19:53:40,468 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 19:53:40,469 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 19:53:40,469 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 19:53:40,469 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 19:53:40,469 - ClipboardService - WARNING - Clipboard access issue: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:40,469 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 19:53:40,469 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 19:53:40,484 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:40,484 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 19:53:40,485 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 19:53:40,485 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 19:53:40,485 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 19:53:40,532 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 19:53:40,532 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 19:53:40,555 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 19:53:46,391 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:53:46,393 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:46,394 - TextCorrectionUseCase - WARNING - Attempted correction with empty clipboard
+2025-08-04 19:53:48,538 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 19:53:48,540 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:53:48,540 - TextCorrectionUseCase - WARNING - Attempted correction with empty clipboard
+2025-08-04 19:55:43,478 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 19:55:43,478 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 19:55:43,478 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 19:55:43,478 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 19:55:43,478 - ClipboardService - WARNING - Clipboard access issue: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:55:43,478 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 19:55:43,479 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 19:55:43,493 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 19:55:43,493 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 19:55:43,494 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 19:55:43,494 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 19:55:43,494 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 19:55:43,494 - ClipboardService - ERROR - Error getting clipboard text: When using gi.repository you must not import static modules like "gobject". Please change all occurrences of "import gobject" to "from gi.repository import GObject". See: https://bugzilla.gnome.org/show_bug.cgi?id=709183
+2025-08-04 19:55:43,494 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 19:55:43,494 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 19:55:43,494 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 19:55:43,495 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 19:55:43,542 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 19:55:43,542 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 19:55:43,566 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 20:01:01,692 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 20:01:01,692 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 20:01:01,692 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 20:01:01,692 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 20:01:01,712 - ClipboardService - INFO - Using clipboard backend: pyclip
+2025-08-04 20:01:01,712 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 20:01:01,712 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 20:01:01,727 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 20:01:01,727 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 20:01:01,728 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 20:01:01,728 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 20:01:01,728 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 20:01:01,729 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 20:01:01,729 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 20:01:01,729 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 20:01:01,730 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 20:01:01,743 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 20:01:01,743 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 20:01:01,743 - pystray._base - ERROR - Failed to dock icon
+Traceback (most recent call last):
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 162, in _update_icon
+    self._assert_docked()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 395, in _assert_docked
+    assert self._systray_manager
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+2025-08-04 20:01:01,745 - pystray._base - ERROR - Failed to dock icon
+Traceback (most recent call last):
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 143, in _show
+    self._assert_docked()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/alec/Documentos/TextCorrector/venv/lib/python3.13/site-packages/pystray/_xorg.py", line 395, in _assert_docked
+    assert self._systray_manager
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+2025-08-04 20:01:01,768 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 20:01:09,996 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:01:09,999 - TextCorrectionUseCase - ERROR - Unexpected error in text correction workflow: original_text must be a string
+2025-08-04 20:01:13,442 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:01:13,447 - TextCorrectionUseCase - ERROR - Unexpected error in text correction workflow: original_text must be a string
+2025-08-04 20:05:00,255 - Text Correction Tool - INFO - Logging configured - Level: INFO, File: text_correction.log
+2025-08-04 20:05:00,255 - SettingsRepository - INFO - Settings file not found, using defaults
+2025-08-04 20:05:00,255 - Text Correction Tool - INFO - Repositories initialized successfully
+2025-08-04 20:05:00,255 - GeminiAIProvider - INFO - Gemini AI configured successfully with model: gemini-1.5-flash
+2025-08-04 20:05:00,268 - ClipboardService - INFO - Using clipboard backend: xclip
+2025-08-04 20:05:00,268 - Text Correction Tool - INFO - Infrastructure services initialized successfully
+2025-08-04 20:05:00,268 - Text Correction Tool - INFO - Domain services initialized successfully
+2025-08-04 20:05:00,283 - Text Correction Tool - INFO - Hotkey listener configured for: alt+s
+2025-08-04 20:05:00,283 - Text Correction Tool - INFO - Presentation layer initialized successfully
+2025-08-04 20:05:00,283 - Text Correction Tool - INFO - Application initialized - Text Correction Tool v2.0.0
+2025-08-04 20:05:00,283 - Text Correction Tool - INFO - Starting Text Correction Tool v2.0.0
+2025-08-04 20:05:00,283 - Text Correction Tool - INFO - Performing application health checks...
+2025-08-04 20:05:00,286 - Text Correction Tool - INFO - Health checks completed successfully
+2025-08-04 20:05:00,286 - HotkeyListener - INFO - Starting hotkey listener for: alt+s (<alt>+s)
+2025-08-04 20:05:00,286 - Text Correction Tool - INFO - Hotkey listener thread started
+2025-08-04 20:05:00,286 - HotkeyListener - INFO - Hotkey listener started successfully
+2025-08-04 20:05:00,333 - SystemTrayManager - INFO - System tray icon initialized successfully
+2025-08-04 20:05:00,333 - Text Correction Tool - INFO - System tray initialized
+2025-08-04 20:05:00,358 - Text Correction Tool - INFO - Starting main event loop
+2025-08-04 20:05:05,307 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:05:05,319 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:05:05,320 - TextCorrectionService - INFO - Processing text correction for 36 characters
+2025-08-04 20:05:06,924 - TextCorrectionService - INFO - Text correction completed in 1.60s
+2025-08-04 20:05:06,932 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:05:07,049 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:05:07,049 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:05:07,050 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 1.60s
+2025-08-04 20:05:23,779 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:05:23,790 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:05:23,790 - TextCorrectionService - INFO - Processing text correction for 16 characters
+2025-08-04 20:05:24,188 - TextCorrectionService - INFO - Text correction completed in 0.40s
+2025-08-04 20:05:24,205 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:05:24,311 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:05:24,311 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:05:24,312 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.40s
+2025-08-04 20:05:32,427 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:05:32,435 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:05:32,435 - TextCorrectionService - INFO - Processing text correction for 78 characters
+2025-08-04 20:05:33,016 - TextCorrectionService - INFO - Text correction completed in 0.58s
+2025-08-04 20:05:33,025 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:05:33,130 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:05:33,130 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:05:33,130 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.58s
+2025-08-04 20:05:42,404 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:05:42,412 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:05:42,412 - TextCorrectionService - INFO - Processing text correction for 41 characters
+2025-08-04 20:05:43,264 - TextCorrectionService - INFO - Text correction completed in 0.85s
+2025-08-04 20:05:43,273 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:05:43,384 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:05:43,384 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:05:43,385 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.85s
+2025-08-04 20:06:11,764 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:06:11,772 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:06:11,772 - TextCorrectionService - INFO - Processing text correction for 42 characters
+2025-08-04 20:06:12,199 - TextCorrectionService - INFO - Text correction completed in 0.43s
+2025-08-04 20:06:12,208 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:06:12,329 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:06:12,330 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:06:12,330 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.43s
+2025-08-04 20:06:14,733 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:06:14,742 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:06:14,743 - TextCorrectionService - INFO - Processing text correction for 45 characters
+2025-08-04 20:06:15,214 - TextCorrectionService - INFO - Text correction completed in 0.47s
+2025-08-04 20:06:15,231 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:06:15,335 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:06:15,335 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:06:15,335 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.47s
+2025-08-04 20:06:46,940 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:06:46,947 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:06:46,947 - TextCorrectionService - INFO - Processing text correction for 71 characters
+2025-08-04 20:06:47,455 - TextCorrectionService - INFO - Text correction completed in 0.51s
+2025-08-04 20:06:47,463 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:06:47,577 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:06:47,577 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:06:47,577 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.51s
+2025-08-04 20:07:02,012 - HotkeyListener - INFO - Hotkey pressed: alt+s
+2025-08-04 20:07:02,022 - TextCorrectionUseCase - INFO - Starting text correction process
+2025-08-04 20:07:02,022 - TextCorrectionService - INFO - Processing text correction for 97 characters
+2025-08-04 20:07:02,536 - TextCorrectionService - INFO - Text correction completed in 0.51s
+2025-08-04 20:07:02,539 - TextCorrectionUseCase - INFO - Corrected text copied to clipboard
+2025-08-04 20:07:02,643 - ClipboardService - ERROR - Error performing paste operation: 'Controller' object does not support the context manager protocol
+2025-08-04 20:07:02,643 - TextCorrectionUseCase - INFO - Auto-paste completed
+2025-08-04 20:07:02,643 - TextCorrectionUseCase - INFO - Text correction workflow completed successfully in 0.51s

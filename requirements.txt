@@ -1,0 +1,33 @@
+# Text Correction Tool - Dependencies
+# ==================================
+
+# Core AI Integration
+google-generativeai>=0.3.0
+
+# System Integration
+pynput>=1.7.6
+pystray>=0.19.4
+
+# Clipboard Support
+pyclip>=0.7.0        # Recomendado para Linux
+pyperclip>=1.8.2     # Fallback
+
+# Image Processing (for system tray icon)
+Pillow>=9.0.0
+
+# GUI Framework (usually included with Python)
+# tkinter - comes with standard Python installation
+
+# Optional: Performance monitoring
+# psutil>=5.9.0
+
+# Development Dependencies (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=4.0.0
+# mypy>=0.910
+
+# System clipboard tools (install via package manager)
+# Arch Linux: sudo pacman -S xclip xsel
+# Ubuntu/Debian: sudo apt install xclip xsel
+# Fedora: sudo dnf install x
