@@ -1,31 +1,31 @@
-# 🚀 Ferramenta de Correção de Texto
+# Ferramenta de Correção de Texto
 
 **Correção de texto alimentada por IA com suporte a atalhos globais**
 
 Uma aplicação desktop profissional que fornece correção de texto em tempo real usando a IA Gemini do Google, com atalhos personalizáveis e integração com a bandeja do sistema.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- **🎯 Ativação por Atalho Global** - Acione a correção de texto de qualquer lugar com atalhos personalizáveis
-- **🤖 Correção Alimentada por IA** - Utiliza o Google Gemini para correção inteligente de texto
-- **📋 Integração com Área de Transferência** - Funciona perfeitamente com a área de transferência do sistema
-- **🔔 Notificações Desktop** - Notificações elegantes para atualizações de status
-- **⚙️ Integração com Bandeja do Sistema** - Executa silenciosamente em segundo plano
-- **🌍 Suporte Multi-idioma** - Prompts em português e inglês
-- **🎨 Interface Moderna** - Interface limpa e profissional
-- **📁 Configurações Persistentes** - Configurações salvas com interface fácil de usar
+- **Ativação por Atalho Global** - Acione a correção de texto de qualquer lugar com atalhos personalizáveis
+- **Correção Alimentada por IA** - Utiliza o Google Gemini para correção inteligente de texto
+- **Integração com Área de Transferência** - Funciona perfeitamente com a área de transferência do sistema
+- **Notificações Desktop** - Notificações elegantes para atualizações de status
+- **Integração com Bandeja do Sistema** - Executa silenciosamente em segundo plano
+- **Suporte Multi-idioma** - Prompts em português e inglês
+- **Interface Moderna** - Interface limpa e profissional
+- **Configurações Persistentes** - Configurações salvas com interface fácil de usar
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 Este projeto implementa os princípios de **Arquitetura Limpa** com clara separação de responsabilidades:
 
 ```
-📁 text_correction_tool/
-├── 📁 domain/           # Lógica de negócio e modelos
-├── 📁 application/      # Casos de uso e orquestração  
-├── 📁 infrastructure/   # Serviços externos e dados
-├── 📁 presentation/     # Componentes de UI e integração do sistema
-└── main.py             # Raiz de composição da aplicação
+text_correction_tool/
+├── domain/           # Lógica de negócio e modelos
+├── application/      # Casos de uso e orquestração  
+├── infrastructure/   # Serviços externos e dados
+├── presentation/     # Componentes de UI e integração do sistema
+└── main.py           # Raiz de composição da aplicação
 ```
 
 ### Camadas da Arquitetura
@@ -35,7 +35,7 @@ Este projeto implementa os princípios de **Arquitetura Limpa** com clara separa
 - **Camada de Infraestrutura**: Integrações de API externas, repositórios, serviços técnicos
 - **Camada de Apresentação**: Componentes de UI, bandeja do sistema, gerenciamento de atalhos
 
-## 🚀 Início Rápido
+## Início Rápido
 
 ### Pré-requisitos
 
@@ -75,7 +75,7 @@ Este projeto implementa os princípios de **Arquitetura Limpa** com clara separa
    python main.py
    ```
 
-## 🎮 Como Usar
+## Como Usar
 
 1. **Inicie a aplicação** - O app executará na bandeja do sistema
 2. **Copie o texto** - Copie qualquer texto que precisa de correção para a área de transferência
@@ -91,7 +91,7 @@ Clique com o botão direito no ícone da bandeja do sistema e selecione "Configu
 - **Notificações**: Habilite/desabilite notificações desktop  
 - **Idioma**: Escolha o idioma dos prompts de correção
 
-## 📋 Dependências
+## Dependências
 
 - **google-generativeai**: Integração com IA Gemini do Google
 - **pynput**: Detecção de atalhos globais
@@ -100,7 +100,7 @@ Clique com o botão direito no ícone da bandeja do sistema e selecione "Configu
 - **Pillow**: Processamento de imagem para ícone da bandeja
 - **tkinter**: Framework de GUI (incluído com Python)
 
-## 🛠️ Desenvolvimento
+## Desenvolvimento
 
 ### Estrutura do Projeto
 
@@ -140,7 +140,7 @@ text_correction_tool/
 - **HotkeyListener**: Detecção de atalhos de teclado globais
 - **SettingsRepository**: Armazenamento persistente de configuração
 
-## ⚙️ Configuração
+## Configuração
 
 ### Configurações Padrão
 
@@ -161,7 +161,7 @@ Você também pode configurar a chave da API via variável de ambiente:
 export GEMINI_API_KEY="sua_chave_api_aqui"
 ```
 
-## 🔧 Solução de Problemas
+## Solução de Problemas
 
 ### Problemas Comuns
 
@@ -184,7 +184,7 @@ export GEMINI_API_KEY="sua_chave_api_aqui"
 
 Os logs da aplicação são salvos em `text_correction.log` no diretório da aplicação.
 
-## 🐧 Instalação no Arch Linux
+## Instalação no Arch Linux
 
 ### Método Recomendado - Ambiente Virtual
 
@@ -224,10 +224,10 @@ python -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
-echo "✅ Configuração concluída! Execute: source venv/bin/activate && python main.py"
+echo "Configuração concluída! Execute: source venv/bin/activate && python main.py"
 ```
 
-## 🤝 Contribuindo
+## Contribuindo
 
 1. Faça um fork do repositório
 2. Crie uma branch de funcionalidade (`git checkout -b feature/funcionalidade-incrivel`)
@@ -243,18 +243,18 @@ echo "✅ Configuração concluída! Execute: source venv/bin/activate && python
 - Documente novas funcionalidades
 - Siga os padrões de código existentes
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
 - **Google Gemini AI** pelas poderosas capacidades de geração de texto
 - **Comunidade Python** pelas excelentes bibliotecas e frameworks
 - **Princípios de Arquitetura Limpa** de Robert C. Martin
 - **Comunidade Open Source** por inspiração e boas práticas
 
-## 📊 Estatísticas do Projeto
+## Estatísticas do Projeto
 
 - **Linhas de código**: ~2.500
 - **Arquivos**: 12
@@ -262,7 +262,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 - **Padrões de design implementados**: 8+
 - **Dependências externas**: 5
 
-## 🎯 Roadmap
+## Roadmap
 
 ### Versão 2.1
 - [ ] Suporte a mais idiomas (Espanhol, Francês)
@@ -276,7 +276,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 - [ ] Plugin para editores de texto
 - [ ] Sincronização na nuvem de configurações
 
-## 🔗 Links Úteis
+## Links Úteis
 
 - [Documentação do Google Gemini](https://ai.google.dev/)
 - [Clean Architecture em Python](https://clean-architecture-python.readthedocs.io/)
