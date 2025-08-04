@@ -272,7 +272,6 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ### Versão 2.2
 - [ ] Integração com outros provedores de IA
-- [ ] Correção por voz
 - [ ] Plugin para editores de texto
 - [ ] Sincronização na nuvem de configurações
 
