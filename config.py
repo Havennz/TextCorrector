@@ -27,14 +27,18 @@ DEFAULT_SETTINGS = {
 # AI Prompts for different languages
 AI_PROMPTS = {
     "Portuguese": (
-        "Corrija a pontuação do texto a seguir, aplicando toda a pontuação "
-        "corretamente sem alterar nenhuma palavra. Mantenha a capitalização "
-        "apenas onde já existe. Texto:\n\n"
+        "Corrija apenas a pontuação e acentuação do texto a seguir. "
+        "Mantenha todas as palavras exatamente como estão, apenas "
+        "adicione ou corrija a pontuação necessária. "
+        "Responda APENAS com o texto corrigido, sem aspas ou prefixos.\n\n"
+        "Texto para correção:\n"
     ),
     "English": (
-        "Fix the punctuation in the following text, placing all punctuation correctly "
-        "without changing any words. Maintain capitalization only where it already exists. "
-        "Text:\n\n"
+        "Fix only the punctuation in the following text. "
+        "Keep all words exactly as they are, only add or correct "
+        "the necessary punctuation. "
+        "Respond ONLY with the corrected text, without quotes or prefixes.\n\n"
+        "Text to correct:\n"
     ),
 }
 
