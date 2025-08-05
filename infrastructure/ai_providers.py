@@ -13,20 +13,11 @@ import google.generativeai as genai
 
 class GeminiAIProvider:
     """
-    Google Gemini AI provider implementation.
-    
-    This class handles communication with Google's Gemini AI API
-    for text generation and correction tasks.
+    Google Gemini AI provider implementation - VERSÃO CORRIGIDA.
     """
     
     def __init__(self, api_key: str, model_name: str = "gemini-1.5-flash"):
-        """
-        Initialize Gemini AI provider.
-        
-        Args:
-            api_key: Google AI API key
-            model_name: Name of the Gemini model to use
-        """
+        """Initialize Gemini AI provider."""
         self.api_key = api_key
         self.model_name = model_name
         self.model: Optional[genai.GenerativeModel] = None
@@ -52,13 +43,13 @@ class GeminiAIProvider:
     
     async def generate_response(self, prompt: str) -> str:
         """
-        Generate AI response for the given prompt.
+        Generate AI response for the given prompt - VERSÃO CORRIGIDA.
         
         Args:
             prompt: The prompt to send to Gemini AI
             
         Returns:
-            Generated response text
+            Generated response text (properly cleaned)
             
         Raises:
             Exception: If AI generation fails
@@ -78,7 +69,9 @@ class GeminiAIProvider:
             if not response or not hasattr(response, "text") or not response.text:
                 raise Exception("Empty or invalid response from Gemini AI")
             
-            result = response.text.strip()
+            # CORREÇÃO PRINCIPAL: Limpeza robusta da resposta
+            result = self._clean_response(response.text)
+            
             self.logger.debug(f"Received response from Gemini AI (length: {len(result)})")
             
             return result
@@ -87,6 +80,68 @@ class GeminiAIProvider:
             error_msg = f"Gemini AI generation failed: {str(e)}"
             self.logger.error(error_msg)
             raise Exception(error_msg)
+    
+    def _clean_response(self, raw_response: str) -> str:
+        """
+        Clean and normalize the AI response.
+        
+        Args:
+            raw_response: Raw response from Gemini
+            
+        Returns:
+            Cleaned response string
+        """
+        try:
+            # Convert to string if needed
+            if not isinstance(raw_response, str):
+                raw_response = str(raw_response)
+            
+            # Remove B' prefix and ' suffix if present (bytes representation)
+            if raw_response.startswith("B'") or raw_response.startswith('B"'):
+                raw_response = raw_response[2:]
+            
+            if raw_response.endswith("'") or raw_response.endswith('"'):
+                raw_response = raw_response[:-1]
+            
+            # Remove common prefixes that might appear
+            prefixes_to_remove = [
+                "b'", 'b"',  # bytes prefix
+                "r'", 'r"',  # raw string prefix
+                "u'", 'u"',  # unicode prefix
+            ]
+            
+            for prefix in prefixes_to_remove:
+                if raw_response.lower().startswith(prefix):
+                    raw_response = raw_response[len(prefix):]
+                    break
+            
+            # Remove trailing quotes
+            suffixes_to_remove = ["'", '"']
+            for suffix in suffixes_to_remove:
+                if raw_response.endswith(suffix):
+                    raw_response = raw_response[:-len(suffix)]
+                    break
+            
+            # Decode if it's still bytes-like
+            if raw_response.startswith('\\x') or '\\n' in raw_response:
+                try:
+                    # Try to decode escape sequences
+                    raw_response = raw_response.encode().decode('unicode_escape')
+                except:
+                    pass  # If decoding fails, keep original
+            
+            # Final cleanup
+            result = raw_response.strip()
+            
+            # Log the cleaning process for debugging
+            if result != raw_response.strip():
+                self.logger.debug(f"Response cleaned: '{raw_response.strip()}' -> '{result}'")
+            
+            return result
+            
+        except Exception as e:
+            self.logger.warning(f"Error cleaning response, returning raw: {e}")
+            return str(raw_response).strip()
     
     def _generate_content_sync(self, prompt: str):
         """
@@ -101,12 +156,7 @@ class GeminiAIProvider:
         return self.model.generate_content(prompt)
     
     async def health_check(self) -> bool:
-        """
-        Perform a health check on the AI provider.
-        
-        Returns:
-            True if the provider is healthy, False otherwise
-        """
+        """Perform a health check on the AI provider."""
         try:
             test_prompt = "Test prompt for health check. Please respond with 'OK'."
             response = await self.generate_response(test_prompt)
@@ -119,12 +169,7 @@ class GeminiAIProvider:
             return False
     
     def get_model_info(self) -> dict:
-        """
-        Get information about the current AI model.
-        
-        Returns:
-            Dictionary with model information
-        """
+        """Get information about the current AI model."""
         return {
             "provider": "Google Gemini",
             "model_name": self.model_name,
