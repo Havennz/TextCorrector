@@ -7,6 +7,7 @@ Technical services and external integrations with robust clipboard support
 import logging
 import subprocess
 import sys
+import asyncio
 from typing import Optional
 
 from pynput import keyboard as pynput_keyboard
@@ -321,22 +322,38 @@ class ClipboardService:
     
     async def paste(self) -> bool:
         """
-        Simulate paste operation (Ctrl+V).
+        Enhanced paste operation with better error handling and timing.
         
         Returns:
             True if successful, False otherwise
         """
         try:
-            with pynput_keyboard.Controller() as controller:
-                # Press Ctrl+V
-                controller.press(pynput_keyboard.Key.ctrl)
-                controller.press('v')
-                controller.release('v')
-                controller.release(pynput_keyboard.Key.ctrl)
+            self.logger.info("Iniciando operação de paste robusta...")
             
-            self.logger.debug("Paste operation completed")
+            # Criar controller
+            controller = pynput_keyboard.Controller()
+            
+            # Delay maior para dar tempo do clipboard ser processado
+            await asyncio.sleep(0.3)
+            
+            # Método mais cuidadoso com timing
+            controller.press(pynput_keyboard.Key.ctrl)
+            await asyncio.sleep(0.05)  # Pequeno delay
+            
+            controller.press('v')
+            await asyncio.sleep(0.05)  # Pequeno delay
+            
+            controller.release('v')
+            await asyncio.sleep(0.05)  # Pequeno delay
+            
+            controller.release(pynput_keyboard.Key.ctrl)
+            
+            # Delay final para confirmar
+            await asyncio.sleep(0.1)
+            
+            self.logger.info("Paste operation completed successfully")
             return True
-            
+        
         except Exception as e:
             self.logger.error(f"Error performing paste operation: {e}")
             return False
