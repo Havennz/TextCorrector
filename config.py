@@ -27,18 +27,49 @@ DEFAULT_SETTINGS = {
 # AI Prompts for different languages
 AI_PROMPTS = {
     "Portuguese": (
-        "Corrija apenas a pontuação e acentuação do texto a seguir. "
-        "Mantenha todas as palavras exatamente como estão, apenas "
-        "adicione ou corrija a pontuação necessária. "
-        "Responda APENAS com o texto corrigido, sem aspas ou prefixos.\n\n"
-        "Texto para correção:\n"
+        "TAREFA: Você é um especialista em correção ortográfica do português brasileiro. "
+        "Sua única função é corrigir pontuação e acentuação.\n\n"
+        
+        "INSTRUÇÕES ESPECÍFICAS:\n"
+        "1. Corrija APENAS pontuação (vírgulas, pontos, pontos de exclamação, etc.) e acentuação\n"
+        "2. NÃO altere, adicione ou remova nenhuma palavra\n"
+        "3. NÃO mude a ordem das palavras\n"
+        "5. Mantenha a estrutura original das frases intacta\n\n"
+        
+        "FORMATO DE RESPOSTA:\n"
+        "- Responda EXCLUSIVAMENTE com o texto corrigido\n"
+        "- NÃO inclua aspas, prefixos, explicações ou comentários\n"
+        "- NÃO adicione texto antes ou depois da correção\n"
+        "- O primeiro caractere da sua resposta deve ser o primeiro caractere do texto corrigido\n\n"
+        
+        "EXEMPLO:\n"
+        "Entrada: ola como voce esta hoje\n"
+        "Saída: Olá, como você está hoje?\n\n"
+        
+        "TEXTO PARA CORREÇÃO:\n"
     ),
+    
     "English": (
-        "Fix only the punctuation in the following text. "
-        "Keep all words exactly as they are, only add or correct "
-        "the necessary punctuation. "
-        "Respond ONLY with the corrected text, without quotes or prefixes.\n\n"
-        "Text to correct:\n"
+        "TASK: You are a punctuation correction specialist for English text. "
+        "Your sole function is to fix punctuation marks.\n\n"
+        
+        "SPECIFIC INSTRUCTIONS:\n"
+        "1. Correct ONLY punctuation (commas, periods, question marks, etc.)\n"
+        "2. DO NOT change, add, or remove any words\n"
+        "3. DO NOT change the order of words\n"
+        "5. Keep the original sentence structure intact\n\n"
+        
+        "RESPONSE FORMAT:\n"
+        "- Respond EXCLUSIVELY with the corrected text\n"
+        "- DO NOT include quotes, prefixes, explanations, or comments\n"
+        "- DO NOT add any text before or after the correction\n"
+        "- The first character of your response must be the first character of the corrected text\n\n"
+        
+        "EXAMPLE:\n"
+        "Input: hello how are you doing today\n"
+        "Output: Hello, how are you doing today?\n\n"
+        
+        "TEXT TO CORRECT:\n"
     ),
 }
 
