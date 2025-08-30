@@ -363,7 +363,7 @@ class SettingsWindow:
         self.language_combo = ttk.Combobox(
             language_frame,
             textvariable=self.language_var,
-            values=["Portuguese", "English"],
+            values=["Portuguese", "English", "PT_to_EN"],
             state="readonly",
             width=17
         )
@@ -497,7 +497,7 @@ class SettingsWindow:
             return "Hotkey should contain modifier keys (e.g., 'alt+s', 'ctrl+shift+c')"
         
         language = self.language_var.get()
-        if language not in ["Portuguese", "English"]:
+        if language not in ["Portuguese", "English", "PT_to_EN"]:
             return "Please select a valid language"
         
         return None

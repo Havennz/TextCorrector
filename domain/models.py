@@ -29,8 +29,8 @@ class CorrectionRequest:
         if not isinstance(self.language, str):
             raise ValueError("language must be a string")
         
-        if self.language not in ["Portuguese", "English"]:
-            raise ValueError("language must be 'Portuguese' or 'English'")
+        if self.language not in ["Portuguese", "English", "PT_to_EN"]:
+            raise ValueError("language must be 'Portuguese' or 'English' or 'PT_to_EN'")
     
     @classmethod
     def create_safe(cls, original_text: Any, language: str, **kwargs) -> 'CorrectionRequest':
@@ -96,9 +96,9 @@ class AppSettings:
         if not isinstance(self.hotkey, str) or not self.hotkey.strip():
             raise ValueError("hotkey must be a non-empty string")
         
-        if self.prompt_language not in ["Portuguese", "English"]:
-            raise ValueError("prompt_language must be 'Portuguese' or 'English'")
-    
+        if self.prompt_language not in ["Portuguese", "English", "PT_to_EN"]:
+            raise ValueError("prompt_language must be 'Portuguese' or 'English' or 'PT_to_EN'")
+
     @property
     def normalized_hotkey(self) -> str:
         """Get normalized hotkey format."""
